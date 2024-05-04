@@ -1,6 +1,12 @@
 "use strict";
-let Person = {
-    name: "Rejwan",
-    age: 24,
-    height: 5.7,
-};
+{
+    let Person = {
+        name: "Cheval",
+        age: 48,
+        height: 10,
+        religious: true,
+        address: "French",
+        nationality: "French",
+    };
+    console.log(Person.age);
+}
