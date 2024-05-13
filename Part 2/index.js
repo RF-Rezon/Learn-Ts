@@ -1,12 +1,13 @@
-"use strict";
 {
-    let Person = {
-        name: "Cheval",
-        age: 48,
-        height: 10,
-        religious: true,
-        address: "French",
-        nationality: "French",
+    var carFunc = function (a, b) {
+        var totalModel = a[b];
+        console.log(totalModel);
     };
-    console.log(Person.age);
+    var car = {
+        color: "White",
+        name: "Lambourghini",
+        model: "Sian",
+        Price: 3,
+    };
+    carFunc(car, "color");
 }

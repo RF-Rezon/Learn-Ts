@@ -1,41 +1,16 @@
 {
-  type Person = {
-    name: string;
-    age: number;
-    height: number;
-    religious: boolean;
-    address: string;
-    nationality: string;
+  let carFunc = <X, Y extends keyof X>(a: X, b: Y) => {
+    let totalModel = a[b];
+
+    console.log(totalModel);
   };
 
-  let Rahim: Person = {
-    name: "Rahim",
-    age: 48,
-    height: 10,
-    religious: true,
-    address: "French",
-    nationality: "French",
+  let car = {
+    color: "White",
+    name: "Lambourghini",
+    model: "Sian",
+    Price: 3,
   };
 
-  let Shafia: Person = {
-    name: "Shafia",
-    age: 48,
-    height: 10,
-    religious: true,
-    address: "French",
-    nationality: "French",
-  };
-  let NiceLady: Person = {
-    name: "Nice Lady Shafia",
-    age: 48,
-    height: 10,
-    religious: true,
-    address: "French",
-    nationality: "French",
-  };
-
-  type array = (a: number, b: number) => number;
-  let anArray: array = (a, b) => a + b;
-
-  anArray(1, 1);
+  carFunc(car, "color");
 }
