@@ -32,6 +32,7 @@
   }
 
   const man1 = new Rahim("Rahim", "Businessman", "black");
+  console.log(man1.name);
 
   const man2 = new Karim("Karim", "Job Holder", "black");
 }
