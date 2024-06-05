@@ -1,16 +1,37 @@
 {
-  let carFunc = <X, Y extends keyof X>(a: X, b: Y) => {
-    let totalModel = a[b];
+  class Person {
+    constructor(
+      public name: string,
+      public work: string,
+      public skin_color: string
+    ) {}
 
-    console.log(totalModel);
-  };
+    about() {
+      console.log(
+        `This is a ${this.name}. It does ${this.work}. It is ${this.skin_color} colored.`
+      );
+    }
+  }
 
-  let car = {
-    color: "White",
-    name: "Lambourghini",
-    model: "Sian",
-    Price: 3,
-  };
+  class Rahim extends Person {
+    constructor(name: string, work: string, skin_color: string) {
+      super(name, work, skin_color);
+    }
 
-  carFunc(car, "color");
+    about() {
+      console.log(
+        `This is a ${this.name}. It does ${this.work}. It is ${this.skin_color} colored.`
+      );
+    }
+  }
+
+  class Karim extends Person {
+    constructor(name: string, work: string, skin_color: string) {
+      super(name, work, skin_color);
+    }
+  }
+
+  const man1 = new Rahim("Rahim", "Businessman", "black");
+
+  const man2 = new Karim("Karim", "Job Holder", "black");
 }
