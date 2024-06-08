@@ -50,9 +50,16 @@
         `${this.name} is a very good person. But he do not work. His parents calls him a ${this.work}`
       );
     }
+
+    public extra_porichoy(religion: string) {
+      console.log(
+        `${this.name} is a very good person. But he do not work. His parents calls him a ${this.work}. His religion is ${religion}`
+      );
+    }
   }
 
   const personInstance = new Person("Rezon", "Okorma", "White");
 
   personInstance.porichoy();
+  personInstance.extra_porichoy("Islam.");
 }
